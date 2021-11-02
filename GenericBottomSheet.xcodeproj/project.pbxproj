@@ -8,22 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		CB8FC1E427316F530029E537 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8FC1E327316F530029E537 /* AppDelegate.swift */; };
-		CB8FC1E627316F530029E537 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8FC1E527316F530029E537 /* SceneDelegate.swift */; };
-		CB8FC1E827316F530029E537 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8FC1E727316F530029E537 /* ViewController.swift */; };
+		CB8FC1E827316F530029E537 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8FC1E727316F530029E537 /* FirstViewController.swift */; };
 		CB8FC1EB27316F530029E537 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB8FC1E927316F530029E537 /* Main.storyboard */; };
 		CB8FC1ED27316F530029E537 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB8FC1EC27316F530029E537 /* Assets.xcassets */; };
 		CB8FC1F027316F530029E537 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB8FC1EE27316F530029E537 /* LaunchScreen.storyboard */; };
+		CB8FC1F827316FA20029E537 /* BottomSheetContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8FC1F727316FA20029E537 /* BottomSheetContainerViewController.swift */; };
+		CB8FC1FF27318BDE0029E537 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8FC1FE27318BDE0029E537 /* SecondViewController.swift */; };
+		CB8FC20227318C840029E537 /* SecondViewControllerContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8FC20127318C840029E537 /* SecondViewControllerContainer.swift */; };
+		CB8FC20427318CF00029E537 /* SecondBottomSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8FC20327318CF00029E537 /* SecondBottomSheetViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CB8FC1E027316F530029E537 /* GenericBottomSheet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GenericBottomSheet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB8FC1E327316F530029E537 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CB8FC1E527316F530029E537 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CB8FC1E727316F530029E537 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CB8FC1E727316F530029E537 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		CB8FC1EA27316F530029E537 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CB8FC1EC27316F530029E537 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB8FC1EF27316F530029E537 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CB8FC1F127316F530029E537 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB8FC1F727316FA20029E537 /* BottomSheetContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetContainerViewController.swift; sourceTree = "<group>"; };
+		CB8FC1FE27318BDE0029E537 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		CB8FC20127318C840029E537 /* SecondViewControllerContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewControllerContainer.swift; sourceTree = "<group>"; };
+		CB8FC20327318CF00029E537 /* SecondBottomSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondBottomSheetViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,42 @@
 		CB8FC1E227316F530029E537 /* GenericBottomSheet */ = {
 			isa = PBXGroup;
 			children = (
+				CB8FC1F927318B640029E537 /* BottomSheetContainer */,
 				CB8FC1E327316F530029E537 /* AppDelegate.swift */,
-				CB8FC1E527316F530029E537 /* SceneDelegate.swift */,
-				CB8FC1E727316F530029E537 /* ViewController.swift */,
+				CB8FC1FC27318BC00029E537 /* SecondViewController */,
+				CB8FC1FB27318B8B0029E537 /* FirstViewController */,
 				CB8FC1E927316F530029E537 /* Main.storyboard */,
 				CB8FC1EC27316F530029E537 /* Assets.xcassets */,
 				CB8FC1EE27316F530029E537 /* LaunchScreen.storyboard */,
 				CB8FC1F127316F530029E537 /* Info.plist */,
 			);
 			path = GenericBottomSheet;
+			sourceTree = "<group>";
+		};
+		CB8FC1F927318B640029E537 /* BottomSheetContainer */ = {
+			isa = PBXGroup;
+			children = (
+				CB8FC1F727316FA20029E537 /* BottomSheetContainerViewController.swift */,
+			);
+			path = BottomSheetContainer;
+			sourceTree = "<group>";
+		};
+		CB8FC1FB27318B8B0029E537 /* FirstViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CB8FC1E727316F530029E537 /* FirstViewController.swift */,
+			);
+			path = FirstViewController;
+			sourceTree = "<group>";
+		};
+		CB8FC1FC27318BC00029E537 /* SecondViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CB8FC1FE27318BDE0029E537 /* SecondViewController.swift */,
+				CB8FC20327318CF00029E537 /* SecondBottomSheetViewController.swift */,
+				CB8FC20127318C840029E537 /* SecondViewControllerContainer.swift */,
+			);
+			path = SecondViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,9 +170,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB8FC1E827316F530029E537 /* ViewController.swift in Sources */,
+				CB8FC1FF27318BDE0029E537 /* SecondViewController.swift in Sources */,
+				CB8FC1E827316F530029E537 /* FirstViewController.swift in Sources */,
+				CB8FC20227318C840029E537 /* SecondViewControllerContainer.swift in Sources */,
 				CB8FC1E427316F530029E537 /* AppDelegate.swift in Sources */,
-				CB8FC1E627316F530029E537 /* SceneDelegate.swift in Sources */,
+				CB8FC1F827316FA20029E537 /* BottomSheetContainerViewController.swift in Sources */,
+				CB8FC20427318CF00029E537 /* SecondBottomSheetViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,7 +252,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -271,7 +307,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
